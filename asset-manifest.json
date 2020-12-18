@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/math-problems/static/css/main.5ad9f9ad.chunk.css",
+    "main.css": "/math-problems/static/css/main.a66ee456.chunk.css",
     "main.js": "/math-problems/static/js/main.0a36dc88.chunk.js",
     "main.js.map": "/math-problems/static/js/main.0a36dc88.chunk.js.map",
     "runtime-main.js": "/math-problems/static/js/runtime-main.e3347dc9.js",
@@ -10,7 +10,7 @@
     "static/js/3.630739ef.chunk.js": "/math-problems/static/js/3.630739ef.chunk.js",
     "static/js/3.630739ef.chunk.js.map": "/math-problems/static/js/3.630739ef.chunk.js.map",
     "index.html": "/math-problems/index.html",
-    "static/css/main.5ad9f9ad.chunk.css.map": "/math-problems/static/css/main.5ad9f9ad.chunk.css.map",
+    "static/css/main.a66ee456.chunk.css.map": "/math-problems/static/css/main.a66ee456.chunk.css.map",
     "static/js/2.5578b393.chunk.js.LICENSE.txt": "/math-problems/static/js/2.5578b393.chunk.js.LICENSE.txt",
     "static/media/App.css": "/math-problems/static/media/WhaleITriedRegular-xWq0.41d8a1dc.ttf",
     "static/media/congratulations.ca0963d5.gif": "/math-problems/static/media/congratulations.ca0963d5.gif"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.e3347dc9.js",
     "static/js/2.5578b393.chunk.js",
-    "static/css/main.5ad9f9ad.chunk.css",
+    "static/css/main.a66ee456.chunk.css",
     "static/js/main.0a36dc88.chunk.js"
   ]
 }
