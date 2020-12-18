@@ -72,11 +72,18 @@ const App = () => {
           }
         }
       } else {
-        first = Math.floor(Math.random() * digitConverer[digits]);
-        second = Math.floor(Math.random() * digitConverer[digits]);
-        if (second > first) {
-          [first, second] = [second, first];
-        }
+          while (ready ===false){
+            first = Math.floor(Math.random() * digitConverer[digits]);
+            second = Math.floor(Math.random() * digitConverer[digits]);
+            
+            if(first && second !== 0){
+              ready= true
+            }
+          }
+          if (second > first) {
+            [first, second] = [second, first];
+          }
+
       }
 
       switch (type) {
