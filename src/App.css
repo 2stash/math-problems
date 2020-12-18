@@ -1,6 +1,55 @@
+@font-face {
+  font-family: whaleITried;
+  src: url(WhaleITriedRegular-xWq0.ttf)
+}
+
+:root {
+  --background-blue: #2AABE4;
+  --orange:#ffcd24;
+  --orange-hover: #f77f00;
+  --dark-grey: #33393D;
+  --dark-charcoal: #333333;
+  --light-blue:#9DC8E4;
+  --dark-grey:#666B6E;
+  --light-grey: #EEEEEE;
+  --light-grey-1: #eff8ff;
+  --success: #54e346;
+  --check-answer-hover:#02c39a;
+  --generate-hover: #29bf12;
+  --blue-hover:#41ead4;
+}
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+
+  /* background-image: linear-gradient( 249.9deg,  rgba(30,68,176,1) 16.3%, rgba(82,86,246,1) 73.8% );
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  background-color: var(--light-grey-1);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+li {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+h1 {
+  font-family: whaleITried;
+  color: var(--dark-charcoal);
+  font-size: 48px;
 }
 
 .App {
@@ -11,12 +60,51 @@
 }
 
 .btn {
-  margin:8px;
-  padding:8px;
+  border: 0;
+  border-radius: 0.25rem;
+  background: #1E88E5;
+  color: white;
+  font-family: -system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  cursor: pointer;
+  background-color: var(--background-blue);
+  height: 50px;
 }
 
+
+
 .btn.active {
-  background-color: red;
+  background-color: var(--orange);
+}
+
+.btn:hover {
+  background-color: var(--blue-hover);
+}
+
+.btn-generate {
+  background-color: var(--success);
+  height: 100px;
+  width: 250px;
+}
+
+.btn-generate:hover {
+  background-color: var(--generate-hover);
+}
+
+.btn-reset {
+  background-color: var(--orange);
+  margin:8px;
+  height:50px;
+}
+
+.btn-reset:hover {
+  opacity: 90%;
+  background-color: var(--orange-hover);
 }
 
 #selection-section {
@@ -24,31 +112,151 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  /* width: 600px; */
 }
 
 #selection-type,
 #selection-digits,
 #selection-number {
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-bottom: 25px;
 }
 
-#subtraction,
-#addition,
-#multiplication,
-#division {
-  width: 22%;
+#selection-type,
+#selection-digits,
+#selection-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 600px; */
+  padding:8px;
 }
 
-#one,
-#two,
-#three {
-  width: 30%;
+.type-container {
+  width: 100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#five,
-#ten,
-#twenty,
-#thirty {
-  width: 22%;
+.type-container-three {
+  width: 100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
+ span {
+  margin: 8px;
+}
+
+.bs {
+  width: 100%;
+  display:block;  
+}
+
+.problem-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* height:50px; */
+  font-size: 48px;
+  background-color: white;
+}
+
+.problems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.problem-container {
+  width: 200px;
+  font-size: 48px;
+  text-align: right;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.problem {
+  margin: 0 8px 0 8px;
+  padding: 8px;
+  letter-spacing: 3px;
+}
+
+.problem-input {
+  border: none;
+  height: 70px;
+  margin: 0;
+  padding: 24px;
+  width:100%;
+  background-color: var(--light-grey-1);
+  font-size: 42px;
+  text-align: right;
+}
+.bottom-border {
+  border-bottom: 5px solid black;
+}
+
+.check-answer {
+  margin:0;
+  padding:0;
+  height:50px;
+}
+
+.check-answer:hover {
+  opacity: 90%;
+  background-color: var(--check-answer-hover) ;
+}
+
+.correct {
+  background-color: green;
+  
+}
+
+.active:hover {
+  background-color: var(--orange);
+}
+
+
+nav {
+  width: 80%;
+  margin:0;
+  padding: 0;
+}
+nav ul li {
+  float: right;
+}
+
+ul {
+  margin:0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px){
+  .type-container {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .type-container-three {
+    display:flex;
+    flex-direction: column;
+  }
+
+  h1 {
+
+    font-size: 32px;
+  }
+
+  .problem-score {
+    
+    font-size: 32px;
+  }
+}
+
