@@ -222,11 +222,11 @@ h1 {
   padding:0;
   height:50px;
 }
-
+/* 
 .check-answer:hover {
   opacity: 90%;
   background-color: var(--check-answer-hover) ;
-}
+} */
 
 .correct {
   background-color: green;
