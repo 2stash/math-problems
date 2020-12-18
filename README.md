@@ -5,4 +5,4 @@ https://2stash.github.io/math-problems/
 
 ![ScreenShot1](./math-problems-1.png)
 
-![ScreenShot2](./math-problems-1.png)
+![ScreenShot2](./math-problems-2.png)
